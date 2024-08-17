@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify 
+from flask import Flask, render_template, request, jsonify
 import joblib
 import numpy as np
 
@@ -20,3 +20,5 @@ def predict():
 
 if __name__ == '__main__':
     application.run(debug=True)
+
+
