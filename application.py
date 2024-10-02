@@ -17,6 +17,5 @@ def predict():
     features = np.array([[data['prev_close_1'], data['prev_close_2'], data['prev_close_3']]])
     prediction = model.predict(features)
     return jsonify({'prediction': prediction[0]})
-
 if __name__ == '__main__':
     application.run(debug=True)
